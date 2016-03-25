@@ -5,9 +5,17 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: normal;
 }
-/*
-SIDEBAR
-*/
+/*********************************
+	HELPERS
+**********************************/
+.unstyled-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/*********************************
+	SIDEBAR
+**********************************/
 .side-menu {
 	width: 100px;
 	height: 100%;
@@ -15,23 +23,46 @@ SIDEBAR
 	position: fixed;
 	z-index: 1;
 }
-.main-menu {
-
+.side-menu a {
+	color: #5E5E5E;
+	text-decoration: none;
+	text-transform: uppercase;
 }
-.unstyled-list {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+.logo {
+	display: block;
+	text-align: center;
+	position: relative;
+	top: 30px;
+}
+.main-menu {
+	position: relative;
+	transform: rotate(270deg);
+	top: 90px;
 }
 .main-menu ul {
-	
+	display: flex;
+	flex-direction: row-reverse;
+}
+.main-menu ul li {
+	display: inline-block;
+	margin: 0 10px;
 }
 .social-menu {
-
+	color: black;
+	text-align: center;
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
 }
-/*
-MAIN CONTENT
-*/
+.social-menu a {
+	color: black;
+}
+.social-menu ul li {
+	padding: 5px;
+}
+/***********************************
+	MAIN CONTENT
+************************************/
 .main-content {
     padding-left: 100px;
 }
