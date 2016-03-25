@@ -1,9 +1,12 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 body {
 	font-family: 'Open Sans', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
-	font-weight: normal;
+	font-weight: 500;
 }
 /*********************************
 	HELPERS
@@ -13,6 +16,20 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 	margin: 0;
 }
+.text-center {	text-align: center; }
+/*********************************
+	GRID
+**********************************/
+.row { 
+	float: left;
+	margin: 0 40px; 
+}
+.col { 
+	float: left;
+	padding: 0 15px;
+}
+.col-1 { width: 100% }
+.col-3 { width: 33.333%; }
 /*********************************
 	SIDEBAR
 **********************************/
@@ -30,7 +47,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .logo {
 	display: block;
-	text-align: center;
 	position: relative;
 	top: 30px;
 }
@@ -49,7 +65,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .social-menu {
 	color: black;
-	text-align: center;
 	position: absolute;
 	bottom: 30px;
 	width: 100%;
@@ -68,6 +83,55 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section {
-	background-color: #5E5E5E;
+	background-color: #333;
 	color: #fff;
+}
+h2 {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h3 {
+	width: 60%;
+	margin: 30px 0;
+	font-size: 22px;
+}
+h4 {
+	margin-top: 0;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.underlined-title:after {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 2px;
+	background: #ff5722;
+	margin-top: 10px;
+}
+.section a {
+	text-decoration: none;
+	color: #ff5722;
+}
+.section a:hover {
+	text-decoration: underline;
+}
+#section-home {
+	background-image: linear-gradient(to top, rgba(64, 59, 74, 0.9), rgba(115,108,112,0.5)), url(../images/photo-background.jpg);
+	/*background-image: linear-gradient(rgba(255, 62, 0, 0.5), rgba(123, 2, 119, 0.5)), url(../images/photo-background.jpg);*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position: center bottom;
+}
+.main-quotation {
+	margin: 0 30%;
+}
+.main-quotation p {
+	font-size: 34px;
+	margin-bottom: 10px;
+}
+.main-quotation footer {
+	text-align: right;
+	font-style: italic;
 }
