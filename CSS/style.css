@@ -17,12 +17,12 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 .text-center {	text-align: center; }
+.img-responsive { width: 100%; }
 /*********************************
 	GRID
 **********************************/
 .row { 
 	float: left;
-	width: 100%;
 	margin: 0 40px; 
 }
 .col { 
@@ -63,7 +63,6 @@ h1, h2, h3, h4, h5, h6 {
 	flex-direction: row-reverse;
 }
 .main-menu ul li {
-	display: inline-block;
 	margin: 0 10px;
 }
 .social-menu {
@@ -152,4 +151,103 @@ h4 {
 .section .btn-primary:hover {
 	text-decoration: none;
 	background: #D63603;
+}
+.slider-wrapper {
+	overflow: hidden;
+}
+.slider {
+	width: 800px;
+}
+@media screen and (min-width: 1431px){
+	.slider {
+		width: 960px;
+	}
+}
+@media screen and (max-width: 1430px){
+	.slider {
+		width: 800px;
+	}
+}
+@media screen and (max-width: 1024px){
+	.slider {
+		width: 400px;
+	}
+}
+
+.slick-dots {
+	list-style: none;
+	margin: 10px 0;
+	padding: 0;
+	text-align: center;
+}
+.slick-dots li {
+	display: inline-block;
+	margin-right: 6px;
+}
+.slick-dots li button {
+	background-color: #88432D;
+	padding: 5px;
+	border: none;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	font-size: 0;
+	cursor: pointer;
+	outline: none;
+}
+.slick-dots li.slick-active button {
+	background-color: #ff5722;
+}
+
+.btn-toggle-menu {
+	display: none;
+}
+
+@media screen and (max-width: 600px){
+	.side-menu {
+		height: 50px;
+		width: 100%;
+	}
+	.logo {
+		position: relative;
+		display: block;
+		top: 10px;
+		float: left;
+		width: 100%;
+	}
+	.main-menu {
+		transform: none;
+		position: relative;
+		float: left;
+		width: 100%;
+		margin-top: -4px;
+		top: 0;
+	}
+	
+	.main-menu ul {
+		display: block;
+		background-color: white;
+	}
+	.main-content {
+		padding-left: 0;
+	}
+	.social-menu {
+		display: none;
+	}
+	.side-menu a {
+		padding: 10px;
+		display: block;
+	}
+	.hide-menu {
+		display: none;
+	}
+	.btn-toggle-menu {
+		display: block;
+	    position: absolute;
+	    right: 0px;
+	    font-size: 21px;
+	    z-index: 1;
+	    padding: 10px 20px;
+	    cursor: pointer;
+	}
 }
